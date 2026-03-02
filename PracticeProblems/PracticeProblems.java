@@ -1,8 +1,11 @@
 public class PracticeProblems {
     public static void main(String[] args) {
-        double km = 10.8;
-        double miles = km * 1.6;
+        int maths = 94;
+        int physics = 95;
+        int chemistry = 96;
 
-        System.out.println("The distance " + km + " km in miles is " + miles);
+        double average = (maths + physics + chemistry) / 3.0;
+
+        System.out.println("Sam’s average mark in PCM is " + average);
     }
 }
