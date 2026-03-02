@@ -1,11 +1,8 @@
 public class PracticeProblems {
-
     public static void main(String[] args) {
+        double km = 10.8;
+        double miles = km * 1.6;
 
-        int year = 2000;
-        int thisYear = 2024;
-        int ageValue = thisYear - year;
-
-        System.out.println("Harry's age in 2024 is " + ageValue);
+        System.out.println("The distance " + km + " km in miles is " + miles);
     }
 }
