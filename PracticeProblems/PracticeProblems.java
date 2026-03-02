@@ -1,11 +1,24 @@
+import java.util.Scanner;
+
 public class PracticeProblems {
     public static void main(String[] args) {
-        int maths = 94;
-        int physics = 95;
-        int chemistry = 96;
+        Scanner sc = new Scanner(System.in);
 
-        double average = (maths + physics + chemistry) / 3.0;
+        System.out.print("Enter base in cm: ");
+        double base = sc.nextDouble();
 
-        System.out.println("Sam’s average mark in PCM is " + average);
+        System.out.print("Enter height in cm: ");
+        double height = sc.nextDouble();
+
+        double areaCm = 0.5 * base * height;
+
+        // 1 inch = 2.54 cm
+        // So 1 sq inch = (2.54 * 2.54) sq cm
+        double areaInches = areaCm / (2.54 * 2.54);
+
+        System.out.println("The Area of the triangle in sq in is "
+                + areaInches + " and sq cm is " + areaCm);
+
+        sc.close();
     }
 }
