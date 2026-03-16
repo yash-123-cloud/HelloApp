@@ -1,11 +1,11 @@
- import java.util.Scanner;
-
 public class HelloApp {
+
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        String name = sc.nextLine();
+        // Get the name from command-line argument
+        String name = args[0];
 
-        System.out.println("Hello " + name);
+        // Print greeting
+        System.out.println("Hello, " + name + "!");
     }
 }
