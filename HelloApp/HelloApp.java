@@ -10,17 +10,15 @@
 
         // Build names using StringBuilder
         StringBuilder nameBuilder = new StringBuilder();
-        boolean first = true;
 
         for (String name : args) {
-            if (!first) {
-                nameBuilder.append(", ");
-            }
-            nameBuilder.append(name);
-            first = false;
+            nameBuilder.append(name).append(", ");
         }
 
+        // Remove trailing ", "
+        String names = nameBuilder.substring(0, nameBuilder.length() - 2);
+
         // Print final greeting
-        System.out.println("Hello, " + nameBuilder.toString() + "!");
+        System.out.println("Hello, " + names + "!");
     }
 }
